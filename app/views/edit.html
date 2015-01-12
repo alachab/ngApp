@@ -1,0 +1,31 @@
+<div class="tweets-container row">
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header pull-right">
+          <a class="btn btn-primary navbar-btn" ng-href="/">Cancel</a>
+          <button class="btn btn-primary navbar-btn" ng-click="save()">Save</button>
+        </div>
+      </div>
+    </nav>
+
+    <form name="settingsForm">
+	  <div class="form-group">
+	    <label for="exampleInputEmail1">Skin</label>
+	    <select
+		  ng-model="settings.skin"
+		  name="skin"
+		  ng-options="skin for skin in settings.skins">
+		</select>
+	  </div>
+	  
+	  <ul>
+	  	<li ng-repeat="col in settings.colomns"> 
+	  		{{col.name}} 
+	  		<input ng-model="col.order" >
+	  	</li>
+	  </ul>
+
+	</form>
+
+</div>

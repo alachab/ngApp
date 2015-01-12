@@ -1,0 +1,19 @@
+<div class="tweets-container row">
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header pull-right">
+          <a class="btn btn-primary navbar-btn" ng-href="/#/edit">Edit Settings</a>
+        </div>
+      </div>
+    </nav>
+
+    <div>Skin : {{settings.skin}}</div>	
+    <h3>Colomns : </h3>
+    <ul>
+    	<li ng-repeat="col in settings.colomns">
+    		<strong>{{col.name}} {{col.order}} </strong>
+    	</li>
+    </ul>
+    
+</div>

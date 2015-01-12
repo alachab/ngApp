@@ -1,0 +1,29 @@
+<div class="tweets-container row">
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header pull-right">
+          <a class="btn btn-primary navbar-btn" ng-href="/#/view">Settings</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="list-group col-md-4">
+        <header>@AppDirect</header>
+        <a href="#" class="list-group-item" ng-repeat="tweet in model.tweets.appDirect">
+            <p>{{tweet.tweet}}</p>
+        </a>
+    </div>
+    <div class="list-group col-md-4">
+        <header>@laughingsquid</header>
+        <a href="#" class="list-group-item" ng-repeat="tweet in model.tweets.laughingsquid">
+            <p>{{tweet.tweet}}</p>
+        </a>
+    </div>
+    <div class="list-group col-md-4">
+        <header>@techcrunch</header>
+        <a href="#" class="list-group-item" ng-repeat="tweet in model.tweets.appDirect">
+            <p>{{tweet.tweet}}</p>
+        </a>
+    </div>
+</div>
